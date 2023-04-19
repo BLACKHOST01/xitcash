@@ -130,4 +130,4 @@ TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
-NPM_BIN_PATH = '/usr/local/bin/npm'
+NPM_BIN_PATH = '/snap/bin/npm'
