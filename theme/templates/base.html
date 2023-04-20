@@ -1,19 +1,36 @@
 {% load static tailwind_tags %}
+{% load fontawesome_6 %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    <title>Django Tailwind</title>
+    <title>
+		{% block title %}
+		  xitcash
+		{% endblock title %}
+	</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		{% tailwind_css %}
+		{% fontawesome_6_static%}
+		{% load static %}
 	</head>
 
 	<body class="bg-gray-50 font-serif leading-normal tracking-normal">
-		<div class="container mx-auto">
-			<section class="flex items-center justify-center h-screen">
-				<h1 class="text-5xl">Django + Tailwind = ❤️</h1>
-			</section>
+		<div class="header">
+			{% block header %}
+			  header
+			{% endblock header %}
+		</div>
+		<div class="main-section">
+			{% block main-section %}
+			  this is the main
+			{% endblock main-section %}
+		</div>
+		<div class="footer">
+			{% block footer %}
+			  	footer
+			{% endblock footer %}	
 		</div>
 	</body>
 </html>
