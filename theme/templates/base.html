@@ -1,25 +1,28 @@
 {% load static tailwind_tags %}
 {% load fontawesome_6 %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
     <title>
 		{% block title %}
-		  xitcash
+		  Xit-cash
 		{% endblock title %}
 	</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="icon" type="image/x-icon" href="{% static 'images/favicon_io/favicon-32x32.png' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 		{% tailwind_css %}
 		{% fontawesome_6_static%}
 		{% load static %}
 	</head>
 
-	<body class="bg-gray-50 font-serif leading-normal tracking-normal">
-		<div class="header">
+	<body class="bg-gray-50  leading-normal tracking-normal">
+		<div class="header text-lg capitalize font-thin">
 			{% block header %}
-			  header
+				{% include "_home/_navigations/nav.html" %}			  
 			{% endblock header %}
 		</div>
 		<div class="main-section">
