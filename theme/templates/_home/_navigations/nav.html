@@ -1,26 +1,38 @@
 {% load static %}
-<nav class=" bg-blue-950 font-light text-white text-xl ">
-   <div class=" flex justify-between">
-        <ul class="hidden md:flex justify-between p-6 mx-24">
+<nav class=" flex md:justify-evenly justify-between p-4 bg-gradient-to-tr from-slate-500 to-blue-950 text-white">
+    <!-- logo  -->
+    <div class="logo">
+            
+        <a href="/"> <img src="{% static 'images/favicon_io/favicon-32x32.png' %}" alt="logo"></a>
+
+    </div>
+
+    <!-- middle navigations -->
+    <div class="navigation  hidden md:block ">
+        <ul class="flex gap-20">
             <li>
-                <a href="#">about</a>
+                <a class=" p-2 " href="/"> <span><i class="fas fa-angle-down"></i></span> about</a>
             </li>
             <li>
-                <a href="#"></a>
+                <a class=" p-2 " href="/"> <span><i class="fas fa-angle-down"></i></span> about</a>
             </li>
             <li>
-                <a href="#">home</a>
+                <a class=" p-2 " href="/"> <span><i class="fas fa-angle-down"></i></span> contact</a>
             </li>
             <li>
-                <a href="" class="hover:border-b-2 p-2">home</a>
-            </li>
-            <li class="border-2 border-green-300 rounded-md hover:bg-black/50">
-                <a href="#" class="p-4 ">Login</a>
+                <a class=" p-2 " href="/"> <span><i class="fas fa-angle-down"></i></span> tech summit    </a>
             </li>
         </ul>
-   
-        <div  class="md:hidden ">
-                <i class="fa-solid fa-bars fa-xl"></i>
-        </div>
-   </div>
+    </div>
+    <div class="signin">
+        signin
+    </div>
+    <!-- side button for small devices -->
+    <div class="btn md:hidden block">
+        <button>
+            
+            <i class="fas fa-bars-staggered"></i>
+            
+        </button>
+    </div>
 </nav>

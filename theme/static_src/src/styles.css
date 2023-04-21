@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* .main-section{
+    @apply  bg-gradient-to-t  from-gray-600 to to-blue-300 h-screen;
+} */
+.main-section {
+    @apply bg-gradient-to-t from-gray-600 to-blue-400 h-screen;
+}
