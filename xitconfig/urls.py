@@ -21,4 +21,5 @@ urlpatterns = [
     path("__reload__/", include("django_browser_reload.urls")),
     path("", include("xithome.urls")),
     path("xit_payment/", include("xit_payment.urls")),
+    path("xit_techSummit/", include("xit_techSummit.urls"))
 ]

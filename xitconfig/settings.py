@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s&%-j#cx2eqakn6*zz+s2jo=^v1o(xox4#at+d#h3_=*-owp%@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1","172.18.75.18", "192.168.0.200" ]
+# ALLOWED_HOSTS = ["localhost", "127.0.0.1","172.18.75.18", "192.168.0.200", "192.168.0.100" ]
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     
     "xithome",
     'xit_payment',
+    'xit_techSummit',
 ]
 
 MIDDLEWARE = [

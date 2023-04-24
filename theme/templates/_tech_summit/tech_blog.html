@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+<div class="tech-body">
+
+
+      <div class="tech-header fixed top-0 w-full z-30">
+            {% block header %}
+                  {% include "_home/_navigations/nav.html" %}
+            {% endblock header %}
+      </div>
+
+      
+      <div class="tech-bodyContent p-9 text-white">
+            {% block main-section %}
+                  <div class="techpostBody px-8 text-justify  md:w-96 w-auto">
+                       <div class="postheader bg-black p-2 text-white">
+                              <div class="postheagImg flex gap-3">
+                                  <span class="phimg">
+                                    <img src="{% static 'images/favicon_io/favicon-32x32.png'%}" alt="">
+                                  </span>
+                                  
+                                  
+
+                                  <span class="phname flex flex-col">
+                                    <span>
+                                          sheyin
+                                    </span>
+
+                                    <span>
+
+                                          date
+                                    </span>
+                                  </span>
+                              </div>
+                       </div>
+                       
+                       <div class="postBody text-lg bg-white/30 p-3 rounded-lg">
+                              <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quis facere sapiente, repellendus atque praesentium consectetur quidem deserunt, dolorem iste sequi earum, veniam eos illum nulla molestiae voluptas laudantium dolore!
+                              </p>
+                       </div>
+
+                       <div class="postFooter bg-black/50 rounded-b-lg flex justify-between p-4 text-white/60 text-2xl">
+                              <div class="posfooterL flex gap-9">
+                                    <span>
+                                          <i class="fas far fa-heart"></i>
+                                    </span>
+                                    <span>
+                                          <i class="fas far fa-comments"></i>
+                                    </span>
+                              </div>
+                              
+                              <div class="postFooterM">
+                                    <span>
+                                          <i class="far fa-save"></i>
+                                    </span>
+                              </div>
+
+                              <div class="postFooterR">
+                                    <span>
+                                          <i class="fas fa-paper-plane"></i>
+                                    </span>
+                              </div>
+                       </div>
+
+
+
+                  </div>
+              
+            {% endblock main-section %}
+      </div>
+
+</div>

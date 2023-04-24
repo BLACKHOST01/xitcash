@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block main-section %}
+{% block header %}
+  
+{% endblock header %}
+        <h1>hello</h1>
+    <!-- {% for post in object_list  %} -->
+      <p>{{ post.body}}</p>
+    <!-- {% endfor %} -->
+    <div class="flex justify-center md:justify-around p-2 ">
+        <div class="bg-white/50 p-5 rounded-lg">
+            {% for post in object_list %}
+                <p>
+                  {{post.body}}
+
+                </p>
+            {% endfor %}
+        </div>
+      
+      
+    </div>
+    <div class="mains px-2 ">
+      <div class="flex justify-between p-4 rounded-lg bg-black/20 text-gray-200">
+        <div class="flex gap-3">
+          <div class="p-6 bg-white rounded-full">
+          
+          </div>
+          <div class="flex flex-col">
+            <span>
+              name
+            </span>
+            <span>
+              time
+            </span>
+          </div>
+
+        </div>
+        <div>
+          <h3>date</h3>
+        </div>
+      </div>
+  </div>
+{% endblock main-section %} 
